@@ -1,0 +1,5 @@
+<hr style="margin-bottom: 4em">
+
+<%= render (ExampleComponent.new().yield_self do |c|
+  LayoutComponent.new() { render c }
+end) %>
